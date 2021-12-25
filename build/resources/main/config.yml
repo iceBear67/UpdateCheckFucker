@@ -1,0 +1,11 @@
+# Only check traffic on main
+onlyMainThread: true
+
+# SMART_MATCH blocks all traffic from a JavaPlugin (WIP)
+# RULE_MATCH blocks all traffic matches rule
+# COMBINED_MATCH blocks all traffic from a plugin and matches rule
+matchMode: RULE_MATCH
+verbose: false
+
+bypassedPlugins:
+  - PlaceHolderAPI
