@@ -1,6 +1,6 @@
-package io.ib67;
+package io.ib67.ucf;
 
-import io.ib67.matcher.PatternMatcher;
+import io.ib67.ucf.matcher.PatternMatcher;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -22,7 +22,6 @@ public class BukkitLoader extends JavaPlugin {
         if (!(ProxySelector.getDefault() instanceof DelegatedProxySelector)) {
             ProxySelector.setDefault(new DelegatedProxySelector(ProxySelector.getDefault(), config));
         }
-        Bukkit.getLogger().setFilter(new UpdateErrorFilter(Bukkit.getLogger().getFilter()));
         getLogger().info("UpdateCheck Fucker loaded.");
     }
 }

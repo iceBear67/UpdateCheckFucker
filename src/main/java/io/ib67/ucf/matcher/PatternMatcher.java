@@ -1,6 +1,6 @@
-package io.ib67.matcher;
+package io.ib67.ucf.matcher;
 
-import io.ib67.Matcher;
+import io.ib67.ucf.Matcher;
 
 import java.net.URI;
 import java.util.List;

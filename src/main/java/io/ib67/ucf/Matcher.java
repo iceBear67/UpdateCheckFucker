@@ -1,4 +1,4 @@
-package io.ib67;
+package io.ib67.ucf;
 
 import java.net.URI;
 

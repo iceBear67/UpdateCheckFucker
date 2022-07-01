@@ -7,7 +7,7 @@ matchMode: RULE_MATCH
 verbose: false
 
 url:
-  - "$http[s]:\/\/.*"
+  - "^http[s]:\\/\\/.*"
   #- "^http[s]:\/\/api.spigotmc.org\/legacy\/update.*"
   #- "^https:\/\/api.github.com\/repos\/.*\/releases$"
 

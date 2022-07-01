@@ -1,4 +1,4 @@
 name: UpdateCheckFucker
 version: 0.0.1
 load: STARTUP
-main: io.ib67.BukkitLoader
+main: io.ib67.ucf.BukkitLoader

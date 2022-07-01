@@ -1,6 +1,6 @@
-package io.ib67;
+package io.ib67.ucf;
 
-import io.ib67.exception.UpdateException;
+import io.ib67.ucf.exception.UpdateException;
 import org.bukkit.Bukkit;
 
 import java.io.IOException;
@@ -28,9 +28,9 @@ public class DelegatedProxySelector extends ProxySelector {
         if (config.getMatcher().is(uri)) {
             if (config.isVerbose()) Bukkit.getLogger().warning("Checked");
             if (config.isOnlyMainThread()) {
-                if (Bukkit.isPrimaryThread()) throw new UpdateException();
+                if (Bukkit.isPrimaryThread()) throw new UpdateException("Connection is blocked by UpdateCheckerFucker, url:"+uri);
             } else {
-                throw new UpdateException();
+                throw new UpdateException("Connection is blocked by UpdateCheckerFucker, url: "+uri);
             }
         }
         return selector.select(uri);
