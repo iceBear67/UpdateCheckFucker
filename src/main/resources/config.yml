@@ -3,9 +3,13 @@ onlyMainThread: true
 
 # SMART_MATCH blocks all traffic from a JavaPlugin (WIP)
 # RULE_MATCH blocks all traffic matches rule
-# COMBINED_MATCH blocks all traffic from a plugin and matches rule
 matchMode: RULE_MATCH
 verbose: false
+
+url:
+  - "$http[s]:\/\/.*"
+  #- "^http[s]:\/\/api.spigotmc.org\/legacy\/update.*"
+  #- "^https:\/\/api.github.com\/repos\/.*\/releases$"
 
 bypassedPlugins:
   - PlaceHolderAPI
